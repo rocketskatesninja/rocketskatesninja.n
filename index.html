@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Welcome to Glynn Pool Care!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,9 +13,344 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!--  -->
+    <header>
+      <nav class="nav collapsible">
+        <a href="/"><img src="images/logo.svg" alt="Logo" /></a>
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">Home</a></li>
+          <li class="nav__item"><a href="#">Services</a></li>
+          <li class="nav__item"><a href="#">Pricing</a></li>
+          <li class="nav__item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="block block--dark block--skewed-left hero">
+      <div class="container grid grid--1x2">
+        <header class="block__header hero__content">
+          <h1 class="block__heading">Pool Service & Property Preservation</h1>
+          <p class="hero__tagline">Service with care</p>
+          <a href="" class="btn btn--accent btn--stretched">I'm a Button!</a>
+          <a href="" class="btn btn--accent btn--stretched">I'm a Button!</a>
+        </header>
+        <picture>
+          <source
+            type="image/png"
+            srcset="images/banner.png 1x, images/banner@2x.png 2x"
+          />
+          <img src="images/banner.png" alt="Banner image" class="hero__image" />
+        </picture>
+      </div>
+    </section>
+    <section class="block container block-domain" data-aos="slide-up">
+      <header class="block__header">
+        <h2>Starting at $20,500 per month</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
+          voluptas.
+        </p>
+      </header>
+      <div class="input-group">
+        <input type="text" class="input" placeholder="Input Placeholder text" />
+        <button class="btn btn--accent">
+          <svg class="icon icon--white">
+            <use xlink:href="images/sprite.svg#search"></use></svg
+          >Search
+        </button>
+      </div>
+      <ul class="list block-domain__prices">
+        <li><span class="badge badge--secondary">list item 1</span></li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+        <li>list item 4</li>
+        <li>list item 5</li>
+        <li>list item 6</li>
+      </ul>
+    </section>
+    <section class="block container block-plans">
+      <div class="grid grid--1x3">
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Plan Name</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--secondary badge--small">10% 0ff</span>
+              <span class="plan__description"
+                >This is the plan description</span
+              >
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Plan List Item 1</li>
+                <li class="list__item">Plan List Item 2</li>
+                <li class="list__item">Plan List Item 3</li>
+              </ul>
+              <button class="btn btn--outline btn--block">I'm a Button!</button>
+            </div>
+          </div>
+        </div>
+        <div class="plan plan--popular">
+          <div class="card card--primary">
+            <header class="card__header">
+              <h3 class="plan__name">Plan Name</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--primary badge--small">10% 0ff</span>
+              <span class="plan__description"
+                >This is the plan description</span
+              >
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Plan List Item 1</li>
+                <li class="list__item">Plan List Item 2</li>
+                <li class="list__item">Plan List Item 3</li>
+              </ul>
+              <button class="btn btn--outline btn--block">I'm a Button!</button>
+            </div>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Plan Name</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--secondary badge--small">10% 0ff</span>
+              <span class="plan__description"
+                >This is the plan description</span
+              >
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Plan List Item 1</li>
+                <li class="list__item">Plan List Item 2</li>
+                <li class="list__item">Plan List Item 3</li>
+              </ul>
+              <button class="btn btn--outline btn--block">I'm a Button!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block container">
+      <header class="block__header">
+        <h2>Here is some more heading text</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit esse
+          minus expedita! Accusantium, molestiae voluptates odit ipsum culpa
+          quasi animi.
+        </p>
+      </header>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="slide-right">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#easy"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">heading text here</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed,
+            necessitatibus! Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Accusamus, sunt?
+          </p>
+          <a href="#" class="link-arrow">Learn moar!</a>
+        </div>
+        <picture data-aos="slide-left">
+          <source
+            type="image/jpg"
+            srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x"
+          />
+          <img class="feature__image" src="images/easy@2x.jpg" alt="" />
+        </picture>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="slide-left">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#computer"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">heading text here</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed,
+            necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Magnam, ducimus.
+          </p>
+          <a href="#" class="link-arrow">Learn moar!</a>
+        </div>
+        <picture data-aos="slide-right">
+          <source
+            type="image/jpg"
+            srcset="images/fast.jpg 1x, images/fast@2x.jpg 2x"
+          />
+          <img class="feature__image" src="images/fast@2x.jpg" alt="" />
+        </picture>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="slide-right">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#wordpress"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">heading text here</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed,
+            necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Magnam, ducimus.
+          </p>
+          <a href="#" class="link-arrow">Learn moar!</a>
+        </div>
+        <picture data-aos="slide-left">
+          <source
+            type="image/jpg"
+            srcset="images/wordpress.jpg 1x, images/wordpress@2x.jpg 2x"
+          />
+          <img class="feature__image" src="images/wordpress@2x.jpg" alt="" />
+        </picture>
+      </article>
+    </section>
+
+    <section class="block block--dark block--skewed-right block-showcase">
+      <header class="block__header">
+        <h2>User Friendly Control Panel</h2>
+      </header>
+      <div class="container grid grid--1x2">
+        <picture class="block-showcase__image">
+          <source
+            type="image/png"
+            srcset="images/ipad.pmg 1x, images/ipad@2x.png 2x"
+          />
+          <img src="images/ipad.png" alt="iPad Picture" />
+        </picture>
+        <ul class="list">
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#wordpress"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Easy Start & Managed Updates</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                  mollitia cupiditate ea architecto tempora recusandae sed iusto
+                  incidunt expedita similique.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#wordpress"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Easy Start & Managed Updates</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                  mollitia cupiditate ea architecto tempora recusandae sed iusto
+                  incidunt expedita similique.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#wordpress"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Easy Start & Managed Updates</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                  mollitia cupiditate ea architecto tempora recusandae sed iusto
+                  incidunt expedita similique.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block">
+      <header class="block__header">
+        <h2>What our customers are saying</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+          sint?
+        </p>
+      </header>
+      <div class="container">
+        <div class="card testimonial">
+          <div class="grid grid--1x2">
+            <div class="testimonial__image">
+              <img src="images/testimonial.jpg" alt="A happy customer" />
+              <span class="icon-container icon-container--accent">
+                <svg class="icon--small icon--accent">
+                  <use xlink:href="images/sprite.svg#quotes"></use>
+                </svg>
+              </span>
+            </div>
+            <blockquote class="quote">
+              <p class="quote__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Recusandae nam deleniti nemo ipsa ab animi, impedit ducimus quae
+                accusantium laboriosam!
+              </p>
+              <footer>
+                <div class="media">
+                  <div class="media__image">
+                    <svg class="icon icon--primary quote__line">
+                      <use xlink:href="images/sprite.svg#line"></use>
+                    </svg>
+                  </div>
+                  <div class="media__body">
+                    <h3 class="media__title quote__author">Jane Doe</h3>
+                    <p class="quote__organization">ABC Company</p>
+                  </div>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="callout callout--primary">
+          <div class="grid grid--1x2">
+            <div class="callout__content">
+              <h2 class="callout__heading">Ready to get started?</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                perspiciatis, totam suscipit at ab beatae officia atque soluta
+                vitae dolores.
+              </p>
+            </div>
+            <a href="#" class="btn btn--secondary btn--stretched"
+              >Get Started!</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="block block--dark footer">
       <div class="container grid footer__sections">
         <section class="collapsible collapsible--expanded footer__section">
@@ -71,5 +406,9 @@
     </footer>
     <!--  -->
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
